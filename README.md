@@ -32,34 +32,21 @@
 * [Java ](https://www.java.com/en/)-Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
 ## Features:-
 
-### Add Request:--
-Users can add a request for a specific blood type and the donors using the app can see the request.
-This app traces the user's location so that the request can be shown to the donors of that particular location.
+### Add Party:--
+Users can add a 
 
-### Register as donor:--
-Users willing to donate blood can register as donors so that they will be shown the requests nearby.
+### Payment In/Payment Out:--
+Users 
 
-### Find Blood Bank's:--
-Users willing to find a blood bank in their location can search through this app and get the necessary information about a particular blood bank.
+### Interest Calculation:--
 
-### OTP verification :--
-user can register through their phone number.
 
-### Realtime User Location:-
-The App can trace users so that data can be very specific to the users' locality.
-
-## Library used:--
+## Special thanks to:--
 
 * Toasty
 
 * de.hdodenhof:circleimageview:3.1.0
 
 * shaishavgandhi:login-buttons:1.0.0
-
-* chaos.view:pinview:1.4.3
-
-* Firebase OTP verification
-
-* Fused Location Provider API
 
 
