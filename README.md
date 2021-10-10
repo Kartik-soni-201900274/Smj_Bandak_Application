@@ -5,7 +5,7 @@
 
 ## Why did you made this?
 ### My aim to create this Application is to provide a reliable accounting application to the  jewellery merchants
-### .As i belongs to gold smith family, I am encouraged to choose this project,As i been through all the difficulties that a jewellery merchant faces while maintaining their accounts. 
+### As i belongs to gold smith family, I am encouraged to choose this project,As i been through all the difficulties that a jewellery merchant faces while maintaining their accounts. 
 ### In term of booking keeping and interest calculation through paper based system, There is lot of chances of mistake and difficult to rectify.So this application removes all the manual work and makes tedious task of maintaining accounts very easyily with no errors.
 ### My mini project SMJ Bandak (Gold Loan) software is  Mobile Based Gold Loan management Software.This Application  is Simple, Clean, Intuitive, Reliable, Efficient and has  user-friendly interface is not overly complex, but instead is straightforward, providing quick access to common features or commands.
 ### It is very user friendly due to which User are not required to be proficient in IT. The system has a simple graphic user interface and features a logical distribution of functions.
