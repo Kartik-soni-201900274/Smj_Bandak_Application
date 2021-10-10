@@ -33,13 +33,16 @@
 ## Features:-
 
 ### Add Party:--
-#### This Application has feature of adding party's, So that User's can add a new party so that all the debit and credit transactions can be grouped under a single party.
+#### This Application has feature of adding party's,User's can add a new party so that all the debit and credit transactions can be grouped under a single party.
 
 ### Payment In/Payment Out:--
 #### User's can add Debit and credit transaction named as Payment In and Payment Out under a particular party.
 
 ### Interest Calculation:--
+#### This Application automatically calculates the interest and updates the Deblit/Credit Balance,so that the user can easily get the party's total balance.
 
+### Individual Party Ledger
+#### User's can also view all the transaction's till date of any individual party with additional sorting and searching options.
 
 ## Special thanks to:--
 
