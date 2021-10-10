@@ -41,8 +41,7 @@
 ### Interest Calculation:--
 #### This Application automatically calculates the interest and updates the Deblit/Credit Balance,so that the user can easily get the party's total balance.
 
-### Individual Party Ledger
-#### User's can also view all the transaction's till date of any individual party with additional sorting and searching options.
+### Individual Party Ledger #### User's can also view all the transaction's till date of any individual party with additional sorting and searching options.
 
 ## Special thanks to:--
 
