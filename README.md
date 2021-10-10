@@ -1,7 +1,7 @@
 # Smj Bandak Application
 
 
-### This is an android application which helps jewellery merchants by make the tedious task of maintaining accounts faster, reliable and with no errors.
+### This is an android application which helps jewellery merchants by making the tedious task of maintaining accounts faster, reliable and with no errors.
 
 ## Why did you made this?
 ### My aim to create this Application is to provide a reliable accounting application to the  jewellery merchants
