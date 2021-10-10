@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sop_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="107dp"
+    android:layout_margin="5dp"
+
+    app:cardCornerRadius="10dp"
+
+    app:cardElevation="7dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        >
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/sop_party_name">
+
+        </View>
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:background="@color/deep_sky_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </View>
+
+        <TextView
+            android:id="@+id/sop_party_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="Party' Name"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sop_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Balance:"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+        <TextView
+            android:id="@+id/sop_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/roboto_mono"
+            android:inputType="numberDecimal"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sop_address2"
+            app:layout_constraintStart_toEndOf="@+id/sop_address2"
+            app:layout_constraintTop_toTopOf="@+id/sop_address2" />
+
+        <TextView
+            android:id="@+id/sop_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="Contact"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/sop_address2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

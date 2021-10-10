@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SMJ Bandak"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:replace="android:label"
+
+        android:theme="@style/Theme.Dark.MyApplication">
+        <activity android:name=".AboutDev"
+            android:theme="@style/Theme.Dark.MyApplication.NoActionBar" ></activity>
+        <activity
+            android:name=".Bandak.viewpartydetails"
+            android:theme="@style/Theme.Dark.MyApplication.NoActionBar" />
+        <activity
+            android:name=".Bandak.update_party"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".showallparty"
+            android:label="Show All Party"
+            android:parentActivityName=".Bandak.BandakMain"
+            android:theme="@style/Theme.Dark.MyApplication"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Bandak.ExtendedDisplayPaymentIn"
+            android:label="Transaction Details" />
+        <activity
+            android:name=".Bandak.extendeddisplayPaymentOut"
+            android:label="Transaction Details" />
+        <activity
+            android:name=".Bandak.Fragment_payment_out"
+            android:label="Edit Transaction"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bandak.Fragment_payment_in"
+            android:label="Edit Transaction"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bandak.DisplayTransParticularparty"
+            android:parentActivityName=".Bandak.BandakMain"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Bandak.Payment_out"
+            android:label="Add Payment Out"
+            android:parentActivityName=".Bandak.BandakMain"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bandak.Payment_IN"
+            android:label="Add Payment In"
+            android:parentActivityName=".Bandak.BandakMain"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bandak.bndkmnaddparty"
+            android:parentActivityName=".Bandak.BandakMain"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bandak.addpartyEXTRA"
+            android:parentActivityName=".Bandak.BandakMain"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bandak.BandakMain"
+            android:theme="@style/Splash.Theme"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

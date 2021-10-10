@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PO_single_row_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="5dp"
+
+    app:cardCornerRadius="10dp"
+
+    app:cardElevation="13dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:background="#FAFAFA"
+        >
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view7"
+            app:layout_constraintTop_toBottomOf="@+id/PO_single_row_date"
+            app:layout_constraintVertical_bias="0.0">
+
+        </View>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:background="@color/neonorange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </View>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Rate:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/PO_singlerowparty_name3"
+            app:layout_constraintTop_toBottomOf="@+id/PO_singlerowparty_name3" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="%"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Po_single_row_rate"
+            app:layout_constraintStart_toEndOf="@+id/Po_single_row_rate"
+            app:layout_constraintTop_toTopOf="@+id/Po_single_row_rate"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/PO_single_row_party_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="Party' Name"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view5"
+            app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+        <TextView
+            android:id="@+id/PO_singlerowparty_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Amount:"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/PO_single_row_party_name"
+            app:layout_constraintTop_toBottomOf="@+id/PO_single_row_party_name" />
+
+        <TextView
+            android:id="@+id/PO_singlerowRs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Rs"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/PO_singlerowparty_name3"
+            app:layout_constraintStart_toEndOf="@+id/PO_singlerowparty_name3"
+            app:layout_constraintTop_toTopOf="@+id/PO_singlerowparty_name3" />
+
+        <TextView
+            android:id="@+id/PO_single_row_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="Amount"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/PO_singlerowRs"
+            app:layout_constraintStart_toEndOf="@+id/PO_singlerowRs"
+            app:layout_constraintTop_toTopOf="@+id/PO_singlerowRs" />
+
+        <TextView
+            android:id="@+id/Po_single_row_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:fontFamily="@font/roboto_mono"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="@+id/textView22"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/PO_single_row_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="Date"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

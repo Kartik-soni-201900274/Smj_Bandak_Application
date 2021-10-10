@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/btmnvPI"
+    android:icon="@drawable/login_new"
+    android:title="Payment in"/>
+    <item
+        android:id="@+id/btmnvPO"
+    android:icon="@drawable/ic_logout"
+        android:title="Payment Out"/>
+    <item
+        android:id="@+id/btmnvAP"
+        android:icon="@drawable/ic_baseline_person_add_24"
+        android:title="New party"/>
+</menu>

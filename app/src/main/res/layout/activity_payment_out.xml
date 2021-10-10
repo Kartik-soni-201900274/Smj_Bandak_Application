@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp"
+    tools:context=".Bandak.Payment_IN">
+
+    <ImageButton
+        android:id="@+id/podatebutton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_baseline_date_range_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/POnamelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#00ABF0"
+        android:layout_marginRight="10dp"
+        app:endIconDrawable="@drawable/ic_baseline_person_add_24"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toStartOf="@+id/POaddnewpartybutton"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/POname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Party's Name"
+            android:imeOptions="actionNext"
+            android:completionThreshold="1"
+            android:maxLines="1"></com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/POaddnewpartybutton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/addparty"
+        android:backgroundTint="#242E38"
+        app:layout_constraintBottom_toBottomOf="@+id/POnamelayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/POnamelayout"></ImageButton>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toStartOf="@+id/podatebutton"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/POnamelayout"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/POdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Date (YYYY-MM-DD)"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:maxLines="1"
+
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/POsavebutton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#242E38"
+        android:backgroundTint="#242E38"
+
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"></Button>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/transamountlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/menu2"
+        app:suffixText="Rs."
+        app:suffixTextColor="@color/black">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/POamount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:completionThreshold="1"
+            android:hint="Amount"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@android:color/primary_text_light">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="17dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/interestblnclayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:startIconDrawable="@drawable/ic_baseline_narration_24"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/transamountlayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/POnarrtion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Narration"
+            android:imeOptions="actionNext"
+          ></com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        app:boxStrokeColor="#00ABF0"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <AutoCompleteTextView
+            android:id="@+id/POamountspinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:text="Cash"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PIratelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:layout_constraintEnd_toEndOf="@+id/podatebutton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/transamountlayout"
+        app:layout_constraintTop_toBottomOf="@+id/menu2"
+        app:suffixText="%"
+        app:suffixTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/POrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:completionThreshold="1"
+            android:hint="Rate"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@android:color/primary_text_light">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

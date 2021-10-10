@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="5dp"
+    android:paddingHorizontal="10dp"
+    app:cardCornerRadius="10dp"
+
+    app:cardElevation="7dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/p1_single_row_party_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Party' Name"
+
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/p1_single_row_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Amount"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/p1_single_row_party_name"
+            app:layout_constraintTop_toBottomOf="@+id/p1_single_row_party_name"
+            app:layout_constraintVertical_bias="0.17000002" />
+
+        <TextView
+            android:id="@+id/p1_single_row_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="Date"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+
+            app:layout_constraintBottom_toTopOf="@+id/p1_single_row_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/p1_single_row_party_name"
+            app:layout_constraintVertical_bias="0.551" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pi_single_row_deletebtn"
+
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/trash"
+            android:layout_marginBottom="6dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/p1_single_row_date"></androidx.appcompat.widget.AppCompatImageButton>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pi_single_row_editbtn"
+
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pencil"
+            android:layout_marginBottom="6dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pi_single_row_deletebtn"></androidx.appcompat.widget.AppCompatImageButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

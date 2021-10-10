@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="save_button">Save</string>
+    <string name="show_details">Show details</string>
+    <string name="update">update</string>
+    <string name="OpenNavMenu">Open Navigation Menu</string>
+    <string name="CLoseNavMenu">Close Navigation Menu</string>
+    <string name="delete">delete</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spinner1">
+        <item>Debit</item>
+        <item>Credit</item>
+    </string-array>
+
+    <string-array name="spinner2">
+        <item>Cash</item>
+        <item>Cheque</item>
+        <item>Bank Transfer</item>
+        <item>Mobile Banking</item>
+    </string-array>
+    <string name="title_activity_viewpartydetails">viewpartydetails</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

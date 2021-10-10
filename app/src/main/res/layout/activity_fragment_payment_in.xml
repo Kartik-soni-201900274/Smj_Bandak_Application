@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp"
+    tools:context=".Bandak.Payment_IN">
+
+    <ImageButton
+        android:id="@+id/fpidatebutton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_baseline_date_range_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        app:boxStrokeColor="#00ABF0"
+        app:endIconDrawable="@drawable/ic_baseline_person_add_24"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/editname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Party's Name"
+            android:imeOptions="actionNext"
+            android:maxLines="1"></com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toStartOf="@+id/fpidatebutton"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="Date (YYYY-MM-DD)"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:maxLines="1"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editamountlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editamountspinner2"
+        app:suffixText="Rs."
+        app:suffixTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editamount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:completionThreshold="1"
+            android:hint="Amount"
+
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@android:color/primary_text_light"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="316dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="17dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/interestblnclayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editamountlayout"
+        app:startIconDrawable="@drawable/ic_baseline_narration_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editnarrtion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Narration"
+            android:imeOptions="actionNext"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/editamountspinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="none"
+        android:text="Cash"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <Button
+            android:id="@+id/editFIdeletebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            app:backgroundTint="@color/grey"
+            android:text="Delete"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_weight="1"></Button>
+        <Button
+            android:id="@+id/editFIdonebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mycolor"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_weight="1"></Button>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

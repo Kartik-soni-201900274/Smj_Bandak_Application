@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="12dp"
+    tools:context=".Bandak.Payment_IN">
+
+    <ImageButton
+        android:id="@+id/fpodateButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_baseline_date_range_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_paymentInnamelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="17dp"
+        app:boxStrokeColor="#00ABF0"
+        app:endIconDrawable="@drawable/ic_baseline_person_add_24"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/edit_paymentOUtname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Party's Name"
+            android:imeOptions="actionNext"
+            android:maxLines="1"></com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+
+        app:layout_constraintEnd_toStartOf="@+id/fpodateButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_paymentInnamelayout"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_paymentoutdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Date (YYYY-MM-DD)"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:maxLines="1"
+
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_paymentoutamountlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_paymentoutratelayout"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+
+        app:layout_constraintTop_toBottomOf="@+id/edit_paymentoutamountspinner2"
+        app:suffixText="Rs."
+        app:suffixTextColor="@color/black">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_paymentoutamount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:completionThreshold="1"
+            android:hint="Amount"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@android:color/primary_text_light">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="17dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/interestblnclayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:startIconDrawable="@drawable/ic_baseline_narration_24"
+
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_paymentoutamountlayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_paymentoutnarrtion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Narration"
+            android:imeOptions="actionNext"
+           ></com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Spinner
+        android:id="@+id/edit_paymentoutamountspinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_paymentoutratelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:layout_constraintEnd_toEndOf="@+id/fpodateButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/edit_paymentoutamountlayout"
+        app:layout_constraintTop_toBottomOf="@id/edit_paymentoutamountspinner2"
+        app:suffixText="%"
+        app:suffixTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_paymentoutrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:completionThreshold="1"
+            android:hint="Rate"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@android:color/primary_text_light">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+            <Button
+                android:id="@+id/editFodeletebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:backgroundTint="@color/grey"
+                app:backgroundTint="@color/grey"
+                android:text="Delete"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_weight="1"></Button>
+        <Button
+            android:id="@+id/editFodonebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_weight="1"></Button>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

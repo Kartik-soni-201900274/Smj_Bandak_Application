@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/datetolayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintBottom_toBottomOf="@+id/datefromlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rangetextviewmiddle"
+        app:layout_constraintTop_toTopOf="@+id/datefromlayout"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="Date To"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:maxLines="1"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/rangetextviewmiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/datefromlayout"
+        app:layout_constraintEnd_toStartOf="@+id/datetolayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/datefromlayout"
+        app:layout_constraintTop_toTopOf="@+id/datefromlayout"></TextView>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Select Date Range (YYYY-MM-DD)"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/datefromlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toStartOf="@+id/rangetextviewmiddle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/datefrom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="Date From"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:maxLines="1"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/rangebackbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:text="back"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/grey"></Button>
+
+        <Button
+            android:id="@+id/rangedonebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/mycolor"
+            android:text="DONE"
+            android:textColor="@color/white"></Button>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

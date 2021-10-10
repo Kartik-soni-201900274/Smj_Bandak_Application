@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PartyEdit_Constraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    >
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/PartyEdit_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_marginTop="10dp"
+app:tabIndicatorFullWidth="false"
+
+        app:layout_constraintTop_toBottomOf="@+id/PartyEdit_textInputLayout6"
+
+
+        app:tabMode="fixed"
+        app:tabTextColor="@color/black"
+        tools:layout_editor_absoluteX="0dp">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/PartyEdit_viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PartyEdit_tablayout"></androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PartyEdit_partynamelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:focusableInTouchMode="false"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/partyEdit_Partyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:hint="Party's Name*"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PartyEdit_textInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:counterEnabled="true"
+        app:counterMaxLength="14"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_baseline_error_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PartyEdit_partynamelayout"
+        app:startIconDrawable="@drawable/ic_baseline_phone_android_24">>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/partyEdit_Partyphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Phone Number*"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/PartyEdit_cancelbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/grey"></Button>
+
+        <Button
+            android:id="@+id/PartyEdit_savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/mycolor"
+            android:text="Save"
+            android:textColor="@color/white"></Button>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

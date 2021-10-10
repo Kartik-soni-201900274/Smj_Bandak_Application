@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addpartyConstraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+opbFragment
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/opbFragmentprincipalblnclayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opbFragmentopeningblnclayout"><![CDATA[
+
+
+        >
+
+        ]]>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/opbFragmentprincipalBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Principal Balance"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="2"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/opbFragmentopeningblnclayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="4dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"><![CDATA[
+
+
+        >
+
+        ]]>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/opbFragmentopeningBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Opening  Balance"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="2"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/opbFragmentinterestblnclayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/opbFragmentprincipalblnclayout">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/opbFragmentinterestbalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Interest  Balance"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:maxLines="2"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/opbFragmentdateInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        errorEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opbFragmentinterestblnclayout"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/opbFragmentopeningbalancedate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="As of Date (YYYY-MM-DD)"
+
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:maxLines="2"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

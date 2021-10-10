@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PI_single_row_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="5dp"
+
+    app:cardCornerRadius="10dp"
+
+    app:cardElevation="13dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:background="#FAFAFA"
+       >
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view6"
+            app:layout_constraintTop_toBottomOf="@+id/PI_single_row_date">
+
+        </View>
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:background="@color/parakeetgreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </View>
+
+        <TextView
+            android:id="@+id/PI_single_row_party_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="Party' Name"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/view6"
+            app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+        <TextView
+            android:id="@+id/PI_singlerowparty_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Amount:"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/PI_single_row_party_name"
+            app:layout_constraintTop_toBottomOf="@+id/PI_single_row_party_name" />
+
+        <TextView
+            android:id="@+id/PI_singlerowRs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Rs"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/PI_singlerowparty_name3"
+            app:layout_constraintStart_toEndOf="@+id/PI_singlerowparty_name3"
+            app:layout_constraintTop_toTopOf="@+id/PI_singlerowparty_name3" />
+
+        <TextView
+            android:id="@+id/PI_single_row_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="Amount"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/PI_singlerowRs"
+            app:layout_constraintStart_toEndOf="@+id/PI_singlerowRs"
+            app:layout_constraintTop_toTopOf="@+id/PI_singlerowRs" />
+
+        <TextView
+            android:id="@+id/PI_single_row_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="Date"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

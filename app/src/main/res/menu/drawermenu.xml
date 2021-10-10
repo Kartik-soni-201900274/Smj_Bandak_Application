@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+        android:id="@+id/allparty"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Show All party"
+        />
+    <item
+
+        android:id="@+id/addnp"
+        android:icon="@drawable/ic_baseline_person_add_24"
+        android:title="Add New party"
+        />
+
+    <item
+
+        android:id="@+id/addpi"
+
+        android:icon="@drawable/login_new"
+        android:iconTint="@color/black"
+        android:title="Add Payment In" />
+    <item
+
+        android:id="@+id/addpo"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@color/black"
+        android:title="Add Payment Out" />
+    <item
+
+        android:id="@+id/abt_dev"
+
+        android:icon="@drawable/ic_baseline_developer_mode_24"
+        android:iconTint="@color/black"
+        android:title="About Developer" />
+</menu>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/addpartyConstraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:paddingTop="6dp"
+      >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/principalblnclayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="17dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#00ABF0"
+                app:hintTextColor="#242E38"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/additionalinputlayout">
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/principalbalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Principal Balance"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLines="2"
+                    android:textColor="@color/black">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="17dp"
+
+                app:boxStrokeColor="#00ABF0"
+                app:hintTextColor="#242E38"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/Partyname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:hint="Party's Name*"
+
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+
+                    android:textColor="@color/black">
+
+                </AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="17dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#00ABF0"
+                app:counterEnabled="true"
+                app:counterMaxLength="14"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_baseline_error_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+                app:startIconDrawable="@drawable/ic_baseline_phone_android_24">>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Partyphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Phone Number*"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLines="1">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/telephoneInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="17dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#00ABF0"
+                app:counterEnabled="true"
+                app:counterMaxLength="14"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_baseline_error_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+                app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Partytelephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Telephone Number"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLines="1">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginHorizontal="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="#00ABF0"
+                app:hintTextColor="#242E38"
+                app:layout_constraintBottom_toTopOf="@+id/interestblnclayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/telephoneInputLayout"
+                app:layout_constraintVertical_bias="0.0"
+                app:startIconDrawable="@drawable/ic_baseline_add_location_alt_24">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/PartyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Party's Address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="2"
+                    android:textColor="@color/black">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/interestblnclayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="17dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#00ABF0"
+                app:hintTextColor="#242E38"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/principalblnclayout"
+                tools:layout_editor_absoluteY="461dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/interestbalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Interest  Balance"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLines="2"
+                    android:textColor="@color/black">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dateInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="17dp"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#00ABF0"
+                errorEnabled="true"
+                app:hintTextColor="#242E38"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/interestblnclayout"
+                app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/openingbalancedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="As of Date (YYYY-MM-DD)"
+
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:maxLines="2"
+                    android:textColor="@color/black">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/additionalinputlayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:boxStrokeColor="#00ABF0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/additionalinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Additional info "
+                    android:inputType="textMultiLine"
+                    android:maxLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/addpartycancelbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/grey"></Button>
+
+        <Button
+            android:id="@+id/addpartysavebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/mycolor"
+            android:text="Save"
+            android:textColor="@color/white"></Button>
+
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

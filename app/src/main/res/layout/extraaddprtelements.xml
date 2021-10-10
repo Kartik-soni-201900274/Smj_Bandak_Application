@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RadioGroup
+        android:id="@+id/toggle"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/pink_out_line"
+        android:checkedButton="@+id/offer"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_pi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background_green"
+            android:button="@null"
+            android:drawableStart="@drawable/ic_baseline_arrow_downward_24"
+            android:drawableLeft="@drawable/ic_baseline_arrow_downward_24"
+            android:drawableTint="@drawable/radio_text_selector"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Payment In"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_po"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background_red"
+            android:button="@null"
+            android:checked="true"
+            android:drawableStart="@drawable/ic_baseline_arrow_upward_24"
+            android:drawableLeft="@drawable/ic_baseline_arrow_upward_24"
+            android:drawableTint="@drawable/radio_text_selector"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Payment Out"
+            android:textColor="@drawable/radio_text_selector"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/grouptextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggle"
+        app:startIconDrawable="@drawable/ic_baseline_group_24">
+
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/Partygroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:hint="Group"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.MaterialAutoCompleteTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

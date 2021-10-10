@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sortbyrange"
+        android:title="Sort by date range"></item>
+    <item
+        android:id="@+id/sortbyamt"
+        android:title="Sort by Amount">
+        <menu >
+            <item
+                android:id="@+id/amtHL"
+                android:title="High to Low" />
+            <item
+                android:id="@+id/amtLH"
+                android:title="Low to High" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/sortbydate"
+        android:title="Sort by Date" >
+        <menu>
+            <item
+                android:id="@+id/dateASC"
+                android:title="ASC"
+                />
+            <item
+                android:id="@+id/dateDSC"
+                android:title="DSC" />
+        </menu>
+
+    </item>
+
+<item android:id="@+id/share"
+    android:title=""
+    app:showAsAction="always"
+    app:iconTint="@color/white"
+    android:icon="@drawable/ic_icons8_share_64">
+
+
+</item>
+</menu>

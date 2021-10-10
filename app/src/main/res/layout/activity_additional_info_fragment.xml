@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdditionalInfoFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/adiFragmentadditionalinputlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        app:boxStrokeColor="#00ABF0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adiFragmenttextInputLayout5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adiFragmentadditionalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional info "
+            android:inputType="textMultiLine"
+            android:maxLines="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/adiFragmenttelephoneInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        app:boxStrokeColor="#00ABF0"
+        app:counterEnabled="true"
+        app:counterMaxLength="14"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_baseline_error_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adiFragmentPartytelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Telephone Number"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/adiFragmenttextInputLayout5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        app:boxStrokeColor="#00ABF0"
+        app:hintTextColor="#242E38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adiFragmenttelephoneInputLayout"
+        app:startIconDrawable="@drawable/ic_baseline_add_location_alt_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adiFragmentPartyAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Party's Address"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress"
+            android:maxLines="2"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
