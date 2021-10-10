@@ -33,10 +33,10 @@
 ## Features:-
 
 ### Add Party:--
-Users can add a 
+This Application has feature of adding party's, So that User's can add a new party() so that all the debit and credit transactions can be grouped under a single party.
 
 ### Payment In/Payment Out:--
-Users 
+User's can add Debit and credit transaction named as Payment In and Payment Out under a particular party.
 
 ### Interest Calculation:--
 
