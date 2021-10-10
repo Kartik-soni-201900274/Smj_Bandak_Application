@@ -13,14 +13,14 @@
 ### Screenshots:-
 <p align="center">
 
- <img src="(https://user-images.githubusercontent.com/91082323/136706648-c4c22cec-4448-42e6-91ab-4aa49bf93feb.jpg" width="170" height="350">
-<img src="https://user-images.githubusercontent.com/91082323/136706649-66405932-6b2a-4b7a-9810-775a0fa7c75f.jpg" width="170" height="350">
-<img src="https://user-images.githubusercontent.com/91082323/136706650-59900527-b5f3-4a7c-90f8-9274bc0352be.jpg" width="170" height="350">
+ <img src=" https://user-images.githubusercontent.com/91082323/136706648-c4c22cec-4448-42e6-91ab-4aa49bf93feb.jpg" width="170" height="350">
+<img src=" https://user-images.githubusercontent.com/91082323/136706649-66405932-6b2a-4b7a-9810-775a0fa7c75f.jpg" width="170" height="350">
+<img src="https://user-images.githubusercontent.com/91082323/136706650-59900527-b5f3-4a7c-90f8-9274bc0352be.jpg " width="170" height="350">
 <img src="https://user-images.githubusercontent.com/91082323/136706652-0e24b657-0dc7-48cb-9dca-40255267f999.jpg" width="170" height="350">
-<img src="https://user-images.githubusercontent.com/91082323/134048210-06fdf782-6a0e-439f-9048-088702b634dc.jpg" width="170" height="350">
-<img src="https://user-images.githubusercontent.com/91082323/134048212-d2545388-ed5b-4ad7-b54b-6b1898773636.jpg" width="170" height="350">
-<img src="https://user-images.githubusercontent.com/91082323/134048214-92714e1c-bada-48c0-9125-d4d92faaf89f.jpg" width="170" height="350">
-<img src="https://user-images.githubusercontent.com/91082323/134054467-52bd3a15-3421-4972-a45c-efb4e41300ad.jpg" width="170" height="350">
+<img src="https://user-images.githubusercontent.com/91082323/136706653-7b3ee096-85b7-4305-8334-8602ad74134b.jpg" width="170" height="350">
+<img src="https://user-images.githubusercontent.com/91082323/136706655-047722d9-b166-4b10-80a2-1685a514f491.jpg" width="170" height="350">
+<img src="https://user-images.githubusercontent.com/91082323/136706656-04bdac9a-871f-42da-a04e-e452bfc9e7e8.jpg" width="170" height="350">
+<img src="(https://user-images.githubusercontent.com/91082323/136706658-de72db01-866e-42ad-b9ae-692a028f79cf.jpg" width="170" height="350">
 </p>
 
 ## Built With:-
