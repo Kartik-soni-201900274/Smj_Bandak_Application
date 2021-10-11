@@ -44,6 +44,8 @@
 ### Individual Party Ledger
 #### User's can also view all the transaction's till date of any individual party with additional sorting and searching options.
 
+### Bikram Sambat Date Support (Nepali Calender) :-
+#### This app also focuses on user's from Nepal, so i have offered support for Nepali dates so that user's can maintain all the transactions in Nepali dates. .
 ## Special thanks to:--
 
 * Toasty
